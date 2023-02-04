@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SingleImageScraper": {
+      "commandName": "Project",
+      "commandLineArgs": "--version"
+    }
+  }
+}
