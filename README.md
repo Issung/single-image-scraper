@@ -13,3 +13,8 @@ Designed to:
 --help                Display this help screen.
 --version             Display version information.
 ```
+
+Once I had all the images I wanted I used this command within Ubuntu WSL
+```
+ffmpeg -framerate 55 -i 'Image (%d).jpg' -vcodec h264 -crf 22 -s 3648x2052 "Timelapse.mp4"
+```
