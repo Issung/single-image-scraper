@@ -1,6 +1,11 @@
 # single-image-scraper
 Simple .NET console app to routinely download a singular URL to desired path with desired interval.
 
+Designed to: 
+* Not break during network issues (catch exception and log any error for each scrape loop).
+* Work nicely across opens & closes (append file number by looking at current number of files in directory).
+* End processing neatly (use CTRL + C to invoke tidy cancellation).
+
 ```
 -o, --outputpath      Directory to output files to. Default is the application running directory.
 -i, --inputurl        Required. URL to routinely scrape from.
